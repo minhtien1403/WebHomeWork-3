@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In | XYZ Corporation</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <a class="navbar-brand" href="#">TMT Corp</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="elogin.html">Nhân viên Đăng Nhập</a>
+		      </li>
+		      <li class="nav-item">
+		      	<a class="nav-link" href="alogin.html" >Admin Đăng Nhập</a>
+		      </li>
+		  </div>
+		</nav>
+	</header>
+	<div class="divider"></div>
+	<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-md-3" style="height: 100vh;">
+					<br><br><br>
+					<div class="card">
+						<div class="card-body">
+							<div class="loginbox">
+						    
+						        <h1>Nhân Viên</h1>
+						        <form action="process/eprocess.php" method="POST">
+						            <p>Email</p>
+						            <input class="form-control" type="text" name="mailuid" placeholder="Enter Email Address" required="required">
+						            <p>Password</p>
+						            <input class="form-control" type="password" name="pwd" placeholder="Enter Password" required="required"><br>
+						            <div>
+						            	<div style="text-align: center;">						         
+						            	<button class="btn btn-dark" type="submit" name="login-submit" value="Login">Đăng Nhập</button>
+						            </div>
+						            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+			
+</body>
+</html>
